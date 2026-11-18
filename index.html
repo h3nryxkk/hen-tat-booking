@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2ead8">
+  <meta name="description" content="HEN._.TAT — Pixel tattoo booking in Melbourne. Share your idea and get in touch on Instagram.">
+  <title>HEN._.TAT — Tattoo booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#f2ead8;--card:#fffaf0;--ink:#27251f;--muted:#746f63;--line:#d8cfbb;--accent:#de6847;--accent-dark:#a9412c;--mint:#c9d9b8;--shadow:5px 5px 0 #27251f;--body:'DM Sans',system-ui,sans-serif;--mono:'DM Mono',monospace}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background-color:var(--paper);color:var(--ink);font:16px/1.55 var(--body);background-image:radial-gradient(#27251f14 1px,transparent 1px);background-size:18px 18px}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit}.shell{max-width:980px;margin:auto;padding:22px 18px 64px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:6px 0 22px}.brand{font-weight:700;text-decoration:none;letter-spacing:.04em}.brand small{color:var(--muted);font-weight:500;letter-spacing:0}.top-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.ig{font-size:14px;font-weight:700;color:var(--accent-dark);text-decoration-thickness:1px;text-underline-offset:3px}.langs{display:flex;border:1px solid var(--ink);background:var(--card);box-shadow:2px 2px 0 var(--ink)}.langs button{border:0;background:transparent;padding:7px 10px;color:var(--muted);cursor:pointer;font-size:12px}.langs button[aria-pressed=true]{background:var(--ink);color:var(--card)}
+    .hero{position:relative;overflow:hidden;padding:clamp(24px,6vw,58px);border:2px solid var(--ink);background:var(--card);box-shadow:var(--shadow);margin-bottom:30px}.hero:after{content:'';position:absolute;right:30px;top:24px;width:62px;height:62px;background:linear-gradient(90deg,var(--accent) 25%,transparent 25% 50%,var(--accent) 50% 75%,transparent 75%),linear-gradient(var(--accent) 25%,transparent 25% 50%,var(--accent) 50% 75%,transparent 75%);background-size:24px 24px;image-rendering:pixelated;opacity:.8}.eyebrow,.step-number,.micro{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase}.eyebrow{color:var(--accent-dark);font-weight:500}.hero h1{font-size:clamp(34px,7vw,68px);line-height:1.04;margin:14px 80px 12px 0;letter-spacing:-.055em}.pixel-title{font-family:'Press Start 2P',var(--mono);font-size:clamp(20px,4vw,36px)!important;line-height:1.5!important;letter-spacing:-.04em!important}.hero p{max-width:54ch;color:var(--muted);margin:0 0 23px}.cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid var(--ink);background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;transition:transform .12s,box-shadow .12s}.cta:hover,.btn:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}.cta:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #347a66;outline-offset:3px}.pixel-label{display:inline-block;background:var(--mint);padding:4px 8px;font:11px var(--mono);border:1px solid var(--ink)}
+    .content{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:22px;align-items:start}.formcol{display:grid;gap:16px}.card{background:var(--card);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:clamp(18px,3vw,26px);display:grid;gap:18px}.stephead{display:flex;align-items:baseline;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:11px}.step-number{color:var(--accent-dark)}h2{font-size:21px;line-height:1.25;margin:0}.field{display:grid;gap:8px}.label{font-weight:700}.hint{font-size:13px;color:var(--muted);margin:0}.options{display:flex;flex-wrap:wrap;gap:9px}.option{position:relative}.option input{position:absolute;opacity:0;pointer-events:none}.option span{display:inline-flex;align-items:center;min-height:42px;border:1px solid var(--line);padding:8px 13px;background:#fffdf8;cursor:pointer;font-size:14px}.option input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--card)}.option input:focus-visible+span{outline:3px solid #347a66;outline-offset:3px}.option .swatch{display:inline-block;width:10px;height:10px;background:var(--accent);margin-right:8px;image-rendering:pixelated}.control{width:100%;border:1px solid var(--line);background:#fffdf8;color:var(--ink);padding:11px 12px;border-radius:0}.control::placeholder{color:#999284}textarea.control{min-height:100px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.filebox{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.filebox input{max-width:100%;font-size:13px}.thumbs{display:flex;flex-wrap:wrap;gap:8px}.thumbs img{width:62px;height:62px;object-fit:cover;border:1px solid var(--line);image-rendering:auto}.aside{position:sticky;top:18px;display:grid;gap:14px}.estimate{background:var(--ink);color:#fffaf0;padding:20px;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--accent);display:grid;gap:14px}.estimate h3{margin:0;font:12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#e8c780}.price{font-size:25px;font-weight:700;line-height:1.2}.price small{display:block;color:#d4cebf;font:12px var(--mono);margin-top:7px}.estimate p{font-size:12px;color:#d4cebf;margin:0}.estimate .divider{border-top:1px dashed #ffffff55}.selected{display:grid;gap:6px;font-size:13px}.selected div{display:flex;justify-content:space-between;gap:10px}.selected span:last-child{text-align:right;color:#e8c780}.steps{padding:16px;background:var(--mint);border:1px solid var(--ink);font-size:13px}.steps strong{display:block;margin-bottom:7px}.steps ol{margin:0;padding-left:20px}.steps li+li{margin-top:5px}.send{width:100%;font-size:15px}.fineprint{font-size:11px;color:var(--muted);margin:0}.result{border:2px solid var(--accent-dark);padding:18px;background:#fff6e8;display:grid;gap:12px}.result h2{font-size:18px}.result pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding:12px;background:#fffdf8;border:1px solid var(--line);font:13px/1.6 var(--mono)}.result-actions{display:flex;gap:10px;flex-wrap:wrap}.btn.secondary{background:transparent;color:var(--ink);box-shadow:none}.footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}.hidden{display:none!important}.note{font-size:12px;padding:10px 12px;border-left:3px solid var(--accent);background:#fffaf0}
+    @media(max-width:760px){.content{grid-template-columns:1fr}.aside{position:static;grid-row:1}.hero:after{right:18px;top:18px;width:42px;height:42px;background-size:16px 16px}.hero h1{margin-right:42px}.row{grid-template-columns:1fr}.shell{padding-inline:14px}.topbar{padding-bottom:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top">HEN._.TAT <small> · MELBOURNE</small></a>
+      <div class="top-actions">
+        <a class="ig" href="https://www.instagram.com/hen._.tat/" target="_blank" rel="noopener noreferrer" data-t="igLink">Instagram ↗</a>
+        <div class="langs" role="group" aria-label="Language">
+          <button type="button" data-lang="zh-Hant" aria-pressed="true">繁中</button>
+          <button type="button" data-lang="zh-Hans" aria-pressed="false">简中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <span class="eyebrow" data-t="eyebrow">PIXEL TATTOO · MELBOURNE</span>
+      <h1 class="pixel-title" data-t="title">YOUR IDEA,<br>IN PIXELS.</h1>
+      <p data-t="intro">把腦海裡的想法，變成一格一格的回憶。選擇風格與尺寸，先看看預估範圍，再把需求傳給我。</p>
+      <a class="cta" href="#booking" data-t="start">開始預約 ↓</a>
+    </section>
+
+    <div class="content" id="booking">
+      <form class="formcol" id="bookingForm" novalidate>
+        <section class="card">
+          <div class="stephead"><span class="step-number">01 /</span><h2 data-t="styleTitle">選擇紋身風格</h2></div>
+          <div class="field">
+            <span class="label" data-t="styleLabel">你想做哪一種？</span>
+            <div class="options">
+              <label class="option"><input type="radio" name="style" value="black" checked><span><i class="swatch" style="background:#27251f"></i><b data-t="black">黑色紋身</b></span></label>
+              <label class="option"><input type="radio" name="style" value="pixel"><span><i class="swatch"></i><b data-t="pixel">彩色像素紋身</b></span></label>
+            </div>
+            <p class="hint" data-t="styleHint">像素紋身的顏色數不包含黑色外輪廓。</p>
+          </div>
+          <div class="field">
+            <span class="label" data-t="sizeLabel">大約尺寸</span>
+            <div class="options">
+              <label class="option"><input type="radio" name="size" value="small" checked><span data-t="small">小</span></label>
+              <label class="option"><input type="radio" name="size" value="medium"><span data-t="medium">中</span></label>
+              <label class="option"><input type="radio" name="size" value="large"><span data-t="large">大</span></label>
+            </div>
+            <p class="hint" data-t="sizeHint">尺寸先以大概感覺選擇，最後會看參考圖確認。</p>
+          </div>
+          <div class="field hidden" id="colorGroup">
+            <span class="label" data-t="colorLabel">像素圖案使用幾種顏色？</span>
+            <div class="options">
+              <label class="option"><input type="radio" name="colors" value="1-2" checked><span data-t="color12">1–2 色</span></label>
+              <label class="option"><input type="radio" name="colors" value="3-4"><span data-t="color34">3–4 色</span></label>
+              <label class="option"><input type="radio" name="colors" value="5+"><span data-t="color5">5 色以上</span></label>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="stephead"><span class="step-number">02 /</span><h2 data-t="ideaTitle">告訴我你的想法</h2></div>
+          <div class="field">
+            <label class="label" for="idea" data-t="ideaLabel">想紋什麼？</label>
+            <textarea class="control" id="idea" data-placeholder="ideaPh" placeholder="描述你的圖案、靈感或想法……"></textarea>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label class="label" for="placement" data-t="placementLabel">想紋的位置</label>
+              <input class="control" id="placement" type="text" data-placeholder="placementPh" placeholder="例如：前臂、小腿">
+            </div>
+            <div class="field">
+              <label class="label" for="availability" data-t="availabilityLabel">方便的時間</label>
+              <input class="control" id="availability" type="text" data-placeholder="availabilityPh" placeholder="例如：週末、六月之後">
+            </div>
+          </div>
+          <div class="field">
+            <span class="label" data-t="refsLabel">參考圖片（可選）</span>
+            <p class="hint" data-t="refsHint">圖片只在你的裝置上預覽，不會上傳到網站。請在 Instagram 私訊時自行附上。</p>
+            <div class="filebox"><input type="file" id="refs" accept="image/*" multiple><span class="micro" id="fileCount"></span></div>
+            <div class="thumbs" id="thumbs" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="stephead"><span class="step-number">03 /</span><h2 data-t="contactTitle">怎麼聯絡你？</h2></div>
+          <div class="field">
+            <label class="label" for="handle" data-t="handleLabel">你的 Instagram 帳號</label>
+            <input class="control" id="handle" type="text" placeholder="@yourname" autocapitalize="off" autocomplete="off">
+          </div>
+          <p class="hint" data-t="contactHint">送出後會整理成一段預約摘要。複製摘要，再透過 Instagram 私訊給我並附上參考圖。</p>
+          <p class="note" data-t="priceNote">頁面上的預估範圍僅供參考，最終價格會依參考圖與實際設計確認。</p>
+          <button class="btn send" type="submit" data-t="makeRequest">整理預約內容</button>
+        </section>
+
+        <section class="result hidden" id="result" aria-live="polite">
+          <h2 data-t="resultTitle">你的預約摘要已準備好</h2>
+          <p class="hint" data-t="resultHint">複製摘要後，打開 Instagram 私訊給我；別忘了把參考圖加在訊息裡。</p>
+          <pre id="summary"></pre>
+          <div class="result-actions">
+            <button type="button" class="btn" id="copySummary" data-t="copy">複製摘要</button>
+            <a class="btn secondary" href="https://www.instagram.com/hen._.tat/" target="_blank" rel="noopener noreferrer" data-t="openInstagram">打開 Instagram ↗</a>
+          </div>
+        </section>
+      </form>
+
+      <aside class="aside">
+        <section class="estimate" aria-live="polite">
+          <h3 data-t="estimateTitle">預估價格範圍</h3>
+          <div class="selected" id="selected"></div>
+          <div class="divider"></div>
+          <div class="price" id="price">—<small data-t="priceUnset">價格範圍待設定</small></div>
+          <p data-t="estimateFine">預估價格之後可依你的定價填入。實際報價會在確認設計後提供。</p>
+        </section>
+        <section class="steps">
+          <strong data-t="nextTitle">接下來</strong>
+          <ol><li data-t="next1">填寫圖案、尺寸和位置</li><li data-t="next2">複製預約摘要</li><li data-t="next3">到 Instagram 私訊並附上參考圖</li></ol>
+        </section>
+        <span class="pixel-label">8-BIT · MADE WITH CARE</span>
+      </aside>
+    </div>
+
+    <footer class="footer"><span>HEN._.TAT · PIXEL TATTOO</span><span>MELBOURNE · <a href="https://www.instagram.com/hen._.tat/" target="_blank" rel="noopener noreferrer">@hen._.tat ↗</a></span></footer>
+  </main>
+<script>
+  const COPY = {
+    'zh-Hant': {
+      igLink:'Instagram ↗', eyebrow:'PIXEL TATTOO · MELBOURNE', title:'YOUR IDEA,<br>IN PIXELS.', intro:'把腦海裡的想法，變成一格一格的回憶。選擇風格與尺寸，先看看預估範圍，再把需求傳給我。', start:'開始預約 ↓', styleTitle:'選擇紋身風格', styleLabel:'你想做哪一種？', black:'黑色紋身', pixel:'彩色像素紋身', styleHint:'像素紋身的顏色數不包含黑色外輪廓。', sizeLabel:'大約尺寸', small:'小', medium:'中', large:'大', sizeHint:'尺寸先以大概感覺選擇，最後會看參考圖確認。', colorLabel:'像素圖案使用幾種顏色？', color12:'1–2 色', color34:'3–4 色', color5:'5 色以上', ideaTitle:'告訴我你的想法', ideaLabel:'想紋什麼？', ideaPh:'描述你的圖案、靈感或想法……', placementLabel:'想紋的位置', placementPh:'例如：前臂、小腿', availabilityLabel:'方便的時間', availabilityPh:'例如：週末、六月之後', refsLabel:'參考圖片（可選）', refsHint:'圖片只在你的裝置上預覽，不會上傳到網站。請在 Instagram 私訊時自行附上。', contactTitle:'怎麼聯絡你？', handleLabel:'你的 Instagram 帳號', contactHint:'送出後會整理成一段預約摘要。複製摘要，再透過 Instagram 私訊給我並附上參考圖。', priceNote:'頁面上的預估範圍僅供參考，最終價格會依參考圖與實際設計確認。', makeRequest:'整理預約內容', resultTitle:'你的預約摘要已準備好', resultHint:'複製摘要後，打開 Instagram 私訊給我；別忘了把參考圖加在訊息裡。', copy:'複製摘要', openInstagram:'打開 Instagram ↗', estimateTitle:'預估價格範圍', priceUnset:'價格範圍待設定', estimateFine:'預估價格之後可依你的定價填入。實際報價會在確認設計後提供。', nextTitle:'接下來', next1:'填寫圖案、尺寸和位置', next2:'複製預約摘要', next3:'到 Instagram 私訊並附上參考圖', count:n=>n?`已選 ${n} 張圖片`:'', copied:'已複製！', needHandle:'請填寫你的 Instagram 帳號。', sumTitle:'紋身預約諮詢', sumStyle:'風格', sumSize:'尺寸', sumColors:'顏色數', sumIdea:'圖案想法', sumPlace:'位置', sumTime:'方便時間', sumIg:'Instagram', sumRefs:'參考圖片', none:'未填寫', blackName:'黑色紋身', pixelName:'彩色像素紋身', colorsName:v=>({'1-2':'1–2 色','3-4':'3–4 色','5+':'5 色以上'})[v], sizeName:v=>({small:'小',medium:'中',large:'大'})[v], refCount:n=>`${n} 張（請在 Instagram 私訊中附上）`, estimate:'預估價格範圍：待設定'
+    },
+    'zh-Hans': {
+      igLink:'Instagram ↗', eyebrow:'PIXEL TATTOO · MELBOURNE', title:'YOUR IDEA,<br>IN PIXELS.', intro:'把脑海里的想法，变成一格一格的回忆。选择风格与尺寸，先看看预估范围，再把需求发给我。', start:'开始预约 ↓', styleTitle:'选择纹身风格', styleLabel:'你想做哪一种？', black:'黑色纹身', pixel:'彩色像素纹身', styleHint:'像素纹身的颜色数量不包括黑色外轮廓。', sizeLabel:'大约尺寸', small:'小', medium:'中', large:'大', sizeHint:'尺寸先按大概感觉选择，最后会看参考图确认。', colorLabel:'像素图案使用几种颜色？', color12:'1–2 色', color34:'3–4 色', color5:'5 色以上', ideaTitle:'告诉我你的想法', ideaLabel:'想纹什么？', ideaPh:'描述你的图案、灵感或想法……', placementLabel:'想纹的位置', placementPh:'例如：前臂、小腿', availabilityLabel:'方便的时间', availabilityPh:'例如：周末、六月之后', refsLabel:'参考图片（可选）', refsHint:'图片只在你的设备上预览，不会上传到网站。请在 Instagram 私信时自行附上。', contactTitle:'如何联系你？', handleLabel:'你的 Instagram 账号', contactHint:'提交后会整理成一段预约摘要。复制摘要，再通过 Instagram 私信给我并附上参考图。', priceNote:'页面上的预估范围仅供参考，最终价格会根据参考图与实际设计确认。', makeRequest:'整理预约内容', resultTitle:'你的预约摘要已准备好', resultHint:'复制摘要后，打开 Instagram 私信给我；别忘了把参考图加在消息里。', copy:'复制摘要', openInstagram:'打开 Instagram ↗', estimateTitle:'预估价格范围', priceUnset:'价格范围待设置', estimateFine:'之后可根据你的定价填写预估价格。确认设计后会提供最终报价。', nextTitle:'接下来', next1:'填写图案、尺寸和位置', next2:'复制预约摘要', next3:'到 Instagram 私信并附上参考图', count:n=>n?`已选择 ${n} 张图片`:'', copied:'已复制！', needHandle:'请填写你的 Instagram 账号。', sumTitle:'纹身预约咨询', sumStyle:'风格', sumSize:'尺寸', sumColors:'颜色数量', sumIdea:'图案想法', sumPlace:'位置', sumTime:'方便时间', sumIg:'Instagram', sumRefs:'参考图片', none:'未填写', blackName:'黑色纹身', pixelName:'彩色像素纹身', colorsName:v=>({'1-2':'1–2 色','3-4':'3–4 色','5+':'5 色以上'})[v], sizeName:v=>({small:'小',medium:'中',large:'大'})[v], refCount:n=>`${n} 张（请在 Instagram 私信中附上）`, estimate:'预估价格范围：待设置'
+    },
+    en: {
+      igLink:'Instagram ↗', eyebrow:'PIXEL TATTOO · MELBOURNE', title:'YOUR IDEA,<br>IN PIXELS.', intro:'Turn the idea in your head into a little piece of pixel art. Choose a style and size, check the estimate, then send your request my way.', start:'START A BOOKING ↓', styleTitle:'Choose your tattoo style', styleLabel:'What are you looking for?', black:'Black tattoo', pixel:'Colour pixel tattoo', styleHint:'Pixel colour count does not include the black outline.', sizeLabel:'Approximate size', small:'Small', medium:'Medium', large:'Large', sizeHint:'Choose an approximate size for now; we’ll confirm it from your reference.', colorLabel:'How many colours in your pixel design?', color12:'1–2 colours', color34:'3–4 colours', color5:'5+ colours', ideaTitle:'Tell me your idea', ideaLabel:'What would you like tattooed?', ideaPh:'Describe your design, inspiration, or idea…', placementLabel:'Placement', placementPh:'e.g. forearm, calf', availabilityLabel:'When are you available?', availabilityPh:'e.g. weekends, after June', refsLabel:'Reference images (optional)', refsHint:'Images are previewed on your device only and are not uploaded. Please attach them in your Instagram DM.', contactTitle:'How can I reach you?', handleLabel:'Your Instagram handle', contactHint:'Your choices will be turned into a booking summary. Copy it and DM me on Instagram with your reference images.', priceNote:'Any estimate is a guide only. Final pricing depends on your reference and the finished design.', makeRequest:'PREPARE MY REQUEST', resultTitle:'Your booking summary is ready', resultHint:'Copy the summary and DM it to me on Instagram. Remember to attach your reference images.', copy:'COPY SUMMARY', openInstagram:'OPEN INSTAGRAM ↗', estimateTitle:'ESTIMATED PRICE RANGE', priceUnset:'Price range to be added', estimateFine:'Estimate ranges can be added once pricing is set. Final pricing is confirmed after reviewing the design.', nextTitle:'WHAT HAPPENS NEXT', next1:'Choose your design, size, and placement', next2:'Copy your booking summary', next3:'DM me on Instagram and attach your references', count:n=>n?`${n} image${n===1?'':'s'} selected`:'', copied:'Copied!', needHandle:'Please enter your Instagram handle.', sumTitle:'Tattoo booking enquiry', sumStyle:'Style', sumSize:'Size', sumColors:'Colours', sumIdea:'Design idea', sumPlace:'Placement', sumTime:'Availability', sumIg:'Instagram', sumRefs:'Reference images', none:'Not provided', blackName:'Black tattoo', pixelName:'Colour pixel tattoo', colorsName:v=>({'1-2':'1–2 colours','3-4':'3–4 colours','5+':'5+ colours'})[v], sizeName:v=>({small:'Small',medium:'Medium',large:'Large'})[v], refCount:n=>`${n} (please attach in Instagram DM)`, estimate:'Estimated range: to be added'
+    }
+  };
+  // Add your AUD ranges here later. Leave blank for now so no prices are shown as invented estimates.
+  const PRICE_RANGES = { 'black-small':'', 'black-medium':'', 'black-large':'', 'pixel-small-1-2':'', 'pixel-small-3-4':'', 'pixel-small-5+':'', 'pixel-medium-1-2':'', 'pixel-medium-3-4':'', 'pixel-medium-5+':'', 'pixel-large-1-2':'', 'pixel-large-3-4':'', 'pixel-large-5+':'' };
+  let lang='zh-Hant', files=[];
+  const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+  function tr(key){return COPY[lang][key]}
+  function applyLanguage(){
+    document.documentElement.lang=lang;
+    $$('[data-t]').forEach(el=>{const val=tr(el.dataset.t);if(el.tagName==='H1')el.innerHTML=val;else el.textContent=val});
+    $$('[data-placeholder]').forEach(el=>el.placeholder=tr(el.dataset.placeholder));
+    $$('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
+    render();
+  }
+  function selected(name){return $('input[name="'+name+'"]:checked')?.value}
+  function render(){
+    const style=selected('style'), size=selected('size'), colors=selected('colors');
+    $('#colorGroup').classList.toggle('hidden',style!=='pixel');
+    const styleName=style==='pixel'?tr('pixelName'):tr('blackName');
+    const sizeName=tr('sizeName')(size);
+    const selectedRows=[[tr('sumStyle'),styleName],[tr('sumSize'),sizeName]];
+    if(style==='pixel')selectedRows.push([tr('sumColors'),tr('colorsName')(colors)]);
+    $('#selected').replaceChildren(...selectedRows.map(([k,v])=>{const d=document.createElement('div'),a=document.createElement('span'),b=document.createElement('span');a.textContent=k;b.textContent=v;d.append(a,b);return d}));
+    const key=style==='pixel'?`pixel-${size}-${colors}`:`black-${size}`;
+    const range=PRICE_RANGES[key];
+    $('#price').firstChild.textContent=range||'—';
+    $('#price').querySelector('small').textContent=range?'AUD':tr('priceUnset');
+  }
+  $$('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;applyLanguage()}));
+  $$('input[name="style"],input[name="size"],input[name="colors"]').forEach(el=>el.addEventListener('change',render));
+  $('#refs').addEventListener('change',e=>{
+    files=Array.from(e.target.files||[]).filter(f=>f.type.startsWith('image/')).slice(0,5);
+    const box=$('#thumbs');box.replaceChildren();
+    files.forEach(file=>{const img=document.createElement('img');img.alt=file.name;img.src=URL.createObjectURL(file);box.appendChild(img)});
+    $('#fileCount').textContent=tr('count')(files.length);
+  });
+  function summary(){
+    const style=selected('style'),size=selected('size'),colors=selected('colors');
+    const text=$('#idea').value.trim(),place=$('#placement').value.trim(),time=$('#availability').value.trim(),handle=$('#handle').value.trim();
+    const key=style==='pixel'?`pixel-${size}-${colors}`:`black-${size}`;
+    return [tr('sumTitle'),`${tr('sumStyle')}: ${style==='pixel'?tr('pixelName'):tr('blackName')}`,`${tr('sumSize')}: ${tr('sizeName')(size)}`,...(style==='pixel'?[`${tr('sumColors')}: ${tr('colorsName')(colors)}`]:[]),`${tr('sumIdea')}: ${text||tr('none')}`,`${tr('sumPlace')}: ${place||tr('none')}`,`${tr('sumTime')}: ${time||tr('none')}`,`${tr('sumIg')}: ${handle}`,`${tr('sumRefs')}: ${tr('refCount')(files.length)}`,tr('estimate')+(PRICE_RANGES[key]?`: ${PRICE_RANGES[key]} AUD`:'')].join('\n');
+  }
+  $('#bookingForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    if(!$('#handle').value.trim()){$('#handle').focus();$('#handle').setCustomValidity(tr('needHandle'));$('#handle').reportValidity();return}
+    $('#handle').setCustomValidity('');
+    $('#summary').textContent=summary();$('#result').classList.remove('hidden');
+    $('#result').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  });
+  $('#handle').addEventListener('input',()=>$('#handle').setCustomValidity(''));
+  $('#copySummary').addEventListener('click',async()=>{
+    const btn=$('#copySummary');
+    try{await navigator.clipboard.writeText($('#summary').textContent)}catch{const r=document.createRange();r.selectNodeContents($('#summary'));const s=getSelection();s.removeAllRanges();s.addRange(r)}
+    btn.textContent=tr('copied');setTimeout(()=>btn.textContent=tr('copy'),1500);
+  });
+  applyLanguage();
+</script>
+</body>
+</html>
